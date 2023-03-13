@@ -2,18 +2,16 @@
 
 import 'package:flutter/material.dart';
 import 'package:plimarks_app/intro/onboarding.dart';
-import 'package:plimarks_app/widgets/big_text.dart';
 
 class SplashScreen extends StatefulWidget {
-  const SplashScreen({ Key? key }) : super(key: key);
+  const SplashScreen({Key? key}) : super(key: key);
 
   @override
   _SplashScreenState createState() => _SplashScreenState();
 }
 
 class _SplashScreenState extends State<SplashScreen> {
-
- @override
+  @override
   void initState() {
     super.initState();
     nextPage();
@@ -32,24 +30,24 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-       backgroundColor: Colors.greenAccent,
-      body: Center(
-        child: Column(
-          // ignore: prefer_const_literals_to_create_immutables
-          children: [
-            SizedBox(
-              height: 300,
+      backgroundColor: Colors.white,
+      body: Column(
+        // ignore: prefer_const_literals_to_create_immutables
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Center(
+              child: Container(
+            height: 250,
+            width: 300,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage('assets/images/logo.png'),
+                  fit: BoxFit.cover),
+              borderRadius: BorderRadius.circular(10),
             ),
-            Center(child:
-              BigText(
-          text: "PLIMARKS",
-          size: 50,
-          fontWeight: FontWeight.bold,
-          color: Color.fromARGB(255, 255, 4, 0),
-          ),
-             ),
-          ],
-        ),
+          )),
+        ],
       ),
     );
   }
