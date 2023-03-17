@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers, unused_import, sized_box_for_whitespace, non_constant_identifier_names, sort_child_properties_last
 
 import 'package:flutter/material.dart';
 import 'package:plimarks_app/utils/lists.dart';
@@ -63,12 +63,12 @@ class _CartState extends State<Cart> {
           padding: const EdgeInsets.all(8.0),
           child: Column(
             children: [
-              RadioMenuButton(
-                value: true,
-                groupValue: false,
-                onChanged: null,
-                child: Text('Select all items'),
-              ),
+              // RadioMenuButton(
+              //   value: true,
+              //   groupValue: false,
+              //   onChanged: null,
+              //   child: Text('Select all items'),
+              // ),
               SizedBox(
                 height: 10,
               ),
@@ -112,14 +112,14 @@ class _CartState extends State<Cart> {
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      RadioMenuButton(
-                        value: true,
-                        groupValue: false,
-                        onChanged: null,
-                        child: SizedBox(
-                          width: 1,
-                        ),
-                      ),
+                      // RadioMenuButton(
+                      //   value: true,
+                      //   groupValue: false,
+                      //   onChanged: null,
+                      //   child: SizedBox(
+                      //     width: 1,
+                      //   ),
+                      // ),
                       Container(
                         height: 120,
                         width: 50,

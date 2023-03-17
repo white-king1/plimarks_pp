@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, duplicate_ignore, unused_import
+// ignore_for_file: prefer_const_constructors, duplicate_ignore, unused_import, use_key_in_widget_constructors, must_be_immutable
 
 import 'package:flutter/material.dart';
 import 'package:plimarks_app/auth/forgotpsd.dart';
